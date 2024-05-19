@@ -1,0 +1,16 @@
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+<ion-content [fullscreen]="true" class="content">
+  <div class="container">
+    <div class="icon-container">
+      <img src="assets/img/appLogo.png" alt="Imagen de llegada" class="arrival-image">
+    </div>
+    <strong style="font-size: 40px;">📍He llegado</strong>
+    <p>Avisa a tus personas favoritas cuando hayas llegado a tu destino
+    <br>¡Tu seguridad, nuestra tranquilidad!</p>
+  </div>
+  <div class="button-container">
+    <ion-button class="yellow-button" shape="round" (click)="goToSignUp()">Crear nueva cuenta</ion-button>
+    <ion-button class="white-button" shape="round" (click)="goToLogin()">Iniciar sesión</ion-button>
+  </div>
+</ion-content>

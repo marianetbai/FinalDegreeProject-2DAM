@@ -1,0 +1,54 @@
+<app-header backButton="/log-in" title="Registro"></app-header>
+<ion-content>
+  <div class="d-flex-center">
+    <form [formGroup]="form" class="login-form" (ngSubmit)="submit()" (keypress.enter)="submit()">
+
+      <div class="icon-container ion-margin-top">
+        <img src="assets/img/usuario.png" alt="Login Icon" class="login-icon">
+      </div>
+
+      <!--NOMBRE-->
+      <app-custom-input
+        autocomplete="name"
+        icon="person-outline"
+        [control]="form.controls.name"
+        type="text"
+        label="Nombre"
+      ></app-custom-input>
+
+      <div class="validators" *ngIf="form.controls.name.errors && form.controls.name.touched">
+        <div *ngIf="form.controls.name.errors?.['required']">El nombre es obligatorio</div>
+        <div *ngIf="form.controls.name.errors?.['minLength']">El nombre debe tener al menos 4 caracteres</div>
+      </div>
+
+      <!--EMAIL-->
+      <app-custom-input
+        autocomplete="email"
+        icon="mail-outline"
+        [control]="form.controls.email"
+        type="email"
+        label="Correo"
+      ></app-custom-input>
+
+      <div class="validators" *ngIf="form.controls.email.errors && form.controls.email.touched">
+        <div *ngIf="form.controls.email.errors?.['required']">El correo es obligatorio</div>
+        <div *ngIf="form.controls.email.errors?.['email']">Introduce un correo válido</div>
+      </div>
+
+      <!--CONTRASEÑA-->
+      <app-custom-input
+        [control]="form.controls.password"
+        icon="lock-closed-outline"
+        type="password"
+        label="Contraseña"
+      ></app-custom-input>
+
+      <br>
+      <br>
+      <ion-button expand="block" mode="ios" class="submit" type="submit" [disabled]="form.invalid">
+        Registrar usuario
+        <ion-icon slot="end" name="person-add-outline"></ion-icon>
+      </ion-button>
+
+    </form>
+  </div>

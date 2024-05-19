@@ -1,0 +1,49 @@
+ion-checkbox {
+  --size: 20px;
+}
+
+ion-checkbox::part(container) {
+  border-radius: 7px;
+  border: 2px solid #1576ec;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.login-icon {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  height: auto;
+}
+
+.options-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.options-container ion-checkbox {
+  flex: 1;
+}
+
+.small-checkbox {
+  font-size: 0.8em;
+  display: flex;
+  --padding-start: 0px;
+  --padding-end: 0px;
+  margin-right: 70px;
+  align-items: center;
+}
+
+.forgot-password {
+  margin: 0;
+  font-size: 0.8em;
+  color: #22227e;
+  cursor: pointer;
+}
+
