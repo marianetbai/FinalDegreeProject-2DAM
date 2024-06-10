@@ -9,7 +9,8 @@ Specifically speaking, the user will be able to:
 - Click on a specific contact to send them notification of your arrival at the chosen destination with a single touch, or click on the “notify everyone” option to send the same notification to all the contacts you have added to your app. You will hold down on a contact and some options will be displayed to select your destination and send the notification.
 - Receive confirmation from the contact to whom you sent the notification.
 
-![image](https://github.com/marianetbai/FinalDegreeProject-2DAM/assets/101601819/212362ea-ac34-4a4e-91db-f0755e4d12e3)
+![Captura de pantalla 2024-06-10 130852](https://github.com/marianetbai/FinalDegreeProject-2DAM/assets/101601819/f4f83d80-356a-4579-9a1b-0f3c1dc3bae7) ![image](https://github.com/marianetbai/FinalDegreeProject-2DAM/assets/101601819/0b9c2aab-edf6-4d35-b8b8-fb1e30d45db8)
+
 
 This project will be developed in Visual Studio Code and Angular, Ionic and Firebase technologies will be used.
 The development approach will be focused on event-based programming, since user interaction will be carried out through the components present in the graphical interface.
