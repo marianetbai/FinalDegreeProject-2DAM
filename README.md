@@ -1,7 +1,7 @@
 # FinalDegreeProject-2DAM
 
 I am developing a mobile application that allows users to send instant notifications about their arrival at predefined destinations in a simple way and without the need to write messages.
-Our application will have two main screens; the screen to register or log in and the screen where all the added contacts will be to whom said notifications will be sent.
+My application will have two main screens; the screen to register or log in and the screen where all the added contacts will be to whom said notifications will be sent.
 Specifically speaking, the user will be able to:
 
 - Register in the application with your email. Once registered you can log in to access all the functionality of the app. User administration will be done with Firebase.
